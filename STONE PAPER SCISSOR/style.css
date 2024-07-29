@@ -55,7 +55,14 @@ img{
     font-size: 4rem;
  }
 
+ .msg-container {
+    margin-top: 2rem;
+ }
+
 #msg {
-    background-color: bisque;
-    color: red;
+    
+    background-color: rgb(177, 100, 6);
+    color: rgb(207, 198, 198);
+    font-size: 3rem;
+    display: inline;
 }
