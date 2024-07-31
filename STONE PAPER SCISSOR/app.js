@@ -15,14 +15,16 @@ const drawGame = () =>{
     msgg.innerText = "Game was Draw!! Play Again"
 }
 
-const showWinner = (userWin) => {
+const showWinner = (userWin, userChoice, compChoice) => {
     if (userWin) {
         console.log("You Win!!");
-        msgg.innerText = "You Won!!"
+        msgg.innerText = `You win! Your ${userChoice} beats ${compChoice}`;
     } else {
-        console.log("You Lose");
+        console.log("You Lose!!");
+        msgg.innerText = `You Lose!! ${compChoice} beats ${userChoice}`;
     }
 };
+
 
 const playGame = (userChoice) =>{
     console.log("user Choice = " , userChoice);
